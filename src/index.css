@@ -1,0 +1,10 @@
+/* Additional base styles */
+:root {
+  --primary-color: #6366f1;
+  --primary-hover: #4f46e5;
+  --secondary-color: #22c55e;
+  --background-dark: #0f172a;
+  --background-light: #f8fafc;
+  --text-dark: #f8fafc;
+  --text-light: #1e293b;
+}
