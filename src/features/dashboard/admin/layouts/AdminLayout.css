@@ -16,4 +16,5 @@
     flex: 1;
     padding: 24px;
     background: var(--second-bg);
+    overflow-y: auto;
 }
