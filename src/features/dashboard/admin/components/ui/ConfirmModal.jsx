@@ -9,7 +9,8 @@ export default function ConfirmModal({
   description = "Bạn có chắc chắn muốn thực hiện hành động này?",
   confirmLabel = "Xác nhận",
   cancelLabel = "Hủy",
-  isLoading = false
+  isLoading = false,
+  variant = "primary" // primary, danger
 }) {
   if (!isOpen) return null;
 
@@ -20,7 +21,11 @@ export default function ConfirmModal({
         <button className="btn btn--ghost" onClick={onClose} disabled={isLoading}>
           {cancelLabel}
         </button>
-        <button className="btn btn--primary" onClick={onConfirm} disabled={isLoading}>
+        <button 
+          className={`btn ${variant === 'danger' ? 'btn-danger' : 'btn--primary'}`} 
+          onClick={onConfirm} 
+          disabled={isLoading}
+        >
           {isLoading ? "Đang xử lý..." : confirmLabel}
         </button>
       </div>

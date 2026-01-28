@@ -7,6 +7,8 @@ import AdminTeacherTab from "../features/teachers/pages/AdminTeacherTab";
 import AdminClasses from "../features/classes/pages/AdminClasses";
 import AdminStudents from "../features/students/pages/AdminStudents";
 
+import AdminSystemStructure from "../features/system/pages/AdminSystemStructure";
+
 const AppRoutes = () => {
     return (
         <Routes>
@@ -17,6 +19,8 @@ const AppRoutes = () => {
                 <Route path="teachers" element={<AdminTeacherTab />} />
                 <Route path="classes" element={<AdminClasses />} />
                 <Route path="students" element={<AdminStudents />} />
+                <Route path="attendance" element={<div className="p-4"><h2>Attendance</h2><p>Coming soon...</p></div>} />
+                <Route path="systemConfig" element={<AdminSystemStructure />} />
             </Route>
             <Route path="/teacher" element={<TeacherLayout pageTitle="Dashboard" />}>
                 <Route index element={<div className="p-4"><h2>Dashboard</h2><p>Coming soon...</p></div>} />

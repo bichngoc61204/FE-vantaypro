@@ -1,0 +1,37 @@
+.alert-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 18px;
+  border-radius: 14px;
+  background: #fff5f5;
+  border: 1px solid #fecaca;
+}
+
+.alert-icon {
+  font-size: 20px;
+  color: #dc2626;
+}
+
+.alert-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.alert-pill {
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.alert-high {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.alert-medium {
+  background: #fef3c7;
+  color: #92400e;
+}

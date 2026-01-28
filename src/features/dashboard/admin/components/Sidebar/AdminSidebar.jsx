@@ -14,6 +14,7 @@ import {
     FiFileText,
     FiMenu,
     FiUser,
+    FiCheckCircle,
 } from 'react-icons/fi';
 
 const AdminSidebar = () => {
@@ -26,8 +27,8 @@ const AdminSidebar = () => {
         { key: 'classes', path: '/admin/classes', label: t('classes'), icon: <FiBook /> },
         { key: 'students', path: '/admin/students', label: t('students'), icon: <FiUser /> },
         { key: 'timetable', path: '/admin/timetable', label: t('timetable'), icon: <FiCalendar /> },
+        { key: 'attendance', path: '/admin/attendance', label: t('attendance'), icon: <FiCheckCircle /> },
         { key: 'systemConfig', path: '/admin/systemConfig', label: t('systemConfig'), icon: <FiSettings /> },
-        { key: 'auditLogs', path: '/admin/auditLogs', label: t('auditLogs'), icon: <FiFileText /> }
     ]
     return (
         <aside className={`admin-sidebar ${collapsed ? 'collapsed' : ''}`}>

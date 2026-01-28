@@ -1,0 +1,45 @@
+.attendance-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.breakdown-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: var(--second-bg);
+  transition: all 0.2s ease;
+}
+
+.breakdown-item:hover {
+  transform: translateX(6px);
+  background: var(--mc-trans);
+}
+
+.breakdown-indicator {
+  width: 4px;
+  height: 36px;
+  border-radius: 4px;
+}
+
+.breakdown-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+.breakdown-label {
+  font-size: 14px;
+  color: var(--ts);
+  font-weight: 500;
+}
+
+.breakdown-value {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--tc);
+}

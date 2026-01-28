@@ -1,0 +1,38 @@
+.today-kpi {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.kpi-item {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.kpi-label {
+  font-size: 13px;
+  color: var(--ts);
+}
+
+.kpi-value {
+  margin-top: 6px;
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--tc);
+}
+
+.kpi-delta {
+  margin-left: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.kpi-delta.up {
+  color: #16a34a;
+}
+
+.kpi-delta.down {
+  color: #dc2626;
+}

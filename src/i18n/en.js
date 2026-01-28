@@ -6,6 +6,7 @@ export const en = {
     subject: 'Subject',
     assignments: 'Assignments',
     timetable: 'Timetable',
+    attendance: 'Attendance',
     systemConfig: 'System Config',
     statistics: 'Statistics',
     auditLogs: 'Audit Logs',
