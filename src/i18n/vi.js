@@ -4,11 +4,24 @@ export const vi = {
     teacher: 'Giáo viên',
     classes: 'Lớp học',
     subject: 'Môn học',
+    students: 'Học sinh',
     assignments: 'Phân công giảng dạy',
     timetable: 'Thời khóa biểu',
+    attendance: 'Điểm danh',
     systemConfig: 'Cấu hình hệ thống',
     statistics: 'Thống kê',
     auditLogs: 'Nhật ký hệ thống',
+
+    // Parent Sidebar
+    parentPortal: 'Cổng thông tin Phụ huynh',
+    leaveRequests: 'Xin phép nghỉ',
+    studentProfile: 'Hồ sơ học sinh',
+    notifications: 'Thông báo',
+    parent: 'Phụ huynh',
+
+    // Parent Dashboard
+    welcomeParent: 'Chào mừng Quý phụ huynh đến với NovaHA!',
+    parentIntro: 'Tại đây, quý vị có thể theo dõi thời khóa biểu, điểm danh, xin phép nghỉ và cập nhật thông tin học tập của con em mình một cách nhanh chóng và thuận tiện.',
     
     // Header
     adminDashboard: 'Hệ thống quản lý',

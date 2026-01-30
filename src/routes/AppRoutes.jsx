@@ -12,6 +12,12 @@ import AdminTeacherTab from "../features/teachers/pages/AdminTeacherTab";
 import AdminClasses from "../features/classes/pages/AdminClasses";
 import AdminStudents from "../features/students/pages/AdminStudents";
 
+import AdminSystemStructure from "../features/system/pages/AdminSystemStructure";
+import AdminTimetables from "../features/Timetables/pages/AdminTimetables";
+import AdminAttendance from "../features/attendance/pages/AdminAttendance";
+import ParentLayout from "../features/dashboard/parent/layouts/ParentLayout";
+import ParentDashboard from "../features/dashboard/parent/pages/ParentDashboard";
+
 const AppRoutes = () => {
     return (
         <Routes>
@@ -22,6 +28,9 @@ const AppRoutes = () => {
                 <Route path="teachers" element={<AdminTeacherTab />} />
                 <Route path="classes" element={<AdminClasses />} />
                 <Route path="students" element={<AdminStudents />} />
+                <Route path="attendance" element={<AdminAttendance />} />
+                <Route path="timetables" element={<AdminTimetables />} />
+                <Route path="systemConfig" element={<AdminSystemStructure />} />
             </Route>
             <Route path="/teacher" element={<TeacherLayout pageTitle="Dashboard" />}>
                 <Route index element={<TeacherDashboard />} />
@@ -97,7 +106,7 @@ const AppRoutes = () => {
                 }
             >
                 <Route index element={<div className="p-4"><h2>Reports</h2><p>Coming soon...</p></div>} />
-                <Route index element={<AdminDashboard />} />
+                
 
             </Route>
             <Route
@@ -107,7 +116,12 @@ const AppRoutes = () => {
                 }
             >
                 <Route index element={<Account />} />
+            </Route>
 
+            {/* Parent Routes */}
+            <Route path="/parent" element={<ParentLayout />}>
+                <Route index element={<ParentDashboard />} />
+                <Route path="notifications" element={<div className="p-4"><h2>Thông báo</h2><p>Coming soon...</p></div>} />
             </Route>
         </Routes>
     );

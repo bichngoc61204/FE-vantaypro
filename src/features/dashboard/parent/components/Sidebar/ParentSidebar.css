@@ -1,0 +1,122 @@
+.parent-sidebar {
+    width: 260px;
+    background: var(--card-bg);
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    transition: width 0.25s ease;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.parent-sidebar.collapsed {
+    width: 80px;
+}
+
+.parent-sidebar-logo {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-bottom: none; /* AdminSidebar doesn't have border-bottom */
+    gap: 12px;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--tc);
+}
+
+.parent-sidebar-toggle {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--tc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    border-radius: var(--radius);
+    transition: background 0.2s ease;
+}
+
+.parent-sidebar-toggle:hover {
+    background-color: var(--mc-trans);
+}
+
+.parent-sidebar-logo span {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--tc);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.parent-sidebar-menu {
+    flex: 1;
+    padding: 16px 8px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.parent-sidebar-menu-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: var(--tc);
+    transition: all 0.2s ease;
+    gap: 12px;
+    border-radius: var(--radius);
+    white-space: nowrap;
+    font-weight: 500;
+}
+
+.parent-sidebar-menu-item:hover {
+    background-color: var(--mc-trans);
+    color: var(--mc);
+}
+
+.parent-sidebar-menu-item.active {
+    background-color: var(--mc);
+    color: var(--tw);
+    box-shadow: 0 4px 12px var(--mc-trans);
+    font-weight: 500;
+}
+
+.parent-sidebar-item-icon {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parent-sidebar-item-text {
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity 0.2s ease, width 0.2s ease;
+}
+
+.parent-sidebar.collapsed .parent-sidebar-menu-item {
+    justify-content: center;
+    padding: 12px;
+    gap: 0;
+}
+
+.parent-sidebar.collapsed .parent-sidebar-item-text {
+    opacity: 0;
+    width: 0;
+    display: none;
+}
+
+.parent-sidebar.collapsed .parent-sidebar-logo {
+    padding: 0 16px; 
+    justify-content: flex-start; /* Button stays left */
+}
+
+.parent-sidebar.collapsed .parent-sidebar-logo span {
+    display: none;
+}

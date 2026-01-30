@@ -1,0 +1,42 @@
+.action-center {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.action-center h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.action-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-top: 1px dashed var(--border);
+}
+
+.action-item:first-of-type {
+  border-top: none;
+}
+
+.action-title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.action-desc {
+  font-size: 12px;
+  color: var(--ts);
+}
+
+.action-btn {
+  padding: 6px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: transparent;
+  cursor: pointer;
+}

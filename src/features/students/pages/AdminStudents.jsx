@@ -435,7 +435,7 @@ export default function AdminStudents() {
     });
   };
 
-  // ===== Top “Operational Queue” (not duplicate: focuses on action) =====
+  //  Top “Operational Queue” (not duplicate: focuses on action) 
   const operationalQueue = useMemo(() => {
     version; // trigger update
     const rows = MOCK_STUDENTS
@@ -479,7 +479,10 @@ export default function AdminStudents() {
       {/* Toolbar */}
       <div className="stu-toolbar">
          <div className="stu-toolbar__left">
-            <div className="strong" style={{fontSize: '1.1rem'}}>Quản lý học sinh</div>
+            <div className="stu-header">
+              <FiUsers />
+              <div className="stu-title">Quản lý học sinh</div>
+            </div>
          </div>
          <div className="stu-toolbar__right">
           <button className="btn" onClick={handleAddStudent}>

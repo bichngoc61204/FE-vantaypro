@@ -22,7 +22,8 @@ import {
   FiUsers,
   FiUserCheck,
   FiTrendingUp,
-  FiAlertTriangle
+  FiAlertTriangle,
+  FiBook
 } from "react-icons/fi";
 
 // Global Admin UI
@@ -129,10 +130,13 @@ export default function AdminClasses() {
       {/* Header row */}
       <div className="clm-top">
         <div className="clm-top__left">
-          <div className="clm-title">
-            <div className="clm-title__main">Quản lý lớp học</div>
-            <div className="clm-title__sub">
-              Quản trị danh sách lớp theo năm học • đóng/mở lớp • chuyển lớp theo năm học (giữ lịch sử)
+          <div className="clm-header">
+            <FiBook />
+            <div>
+              <div className="clm-title__main">Quản lý lớp học</div>
+              <div className="clm-title__sub">
+                Quản trị danh sách lớp theo năm học • đóng/mở lớp • chuyển lớp theo năm học (giữ lịch sử)
+              </div>
             </div>
           </div>
 

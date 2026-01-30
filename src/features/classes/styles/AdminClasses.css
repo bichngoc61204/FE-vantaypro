@@ -134,15 +134,27 @@
   justify-content: space-between;
   gap: 16px;
 }
+.clm-header {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+.clm-header svg {
+  margin-top: 4px; /* Align with text top */
+  font-size: 20px;
+  color: var(--mc);
+}
 .clm-title__main {
   font-size: 18px;
   font-weight: 700;
   color: var(--tc);
+  line-height: 1.2;
 }
 .clm-title__sub {
   margin-top: 4px;
   color: var(--ts);
   font-weight: 500;
+  font-size: 13px;
 }
 .clm-badges {
   margin-top: 12px;

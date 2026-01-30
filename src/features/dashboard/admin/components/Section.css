@@ -1,0 +1,25 @@
+.dashboard-section {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.dashboard-section-title h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--tc);
+}
+
+.dashboard-section-subtitle {
+  font-size: 13px;
+  color: var(--ts);
+  margin-top: -6px;
+}
+
+.dashboard-section-content {
+  margin-top: 12px;
+}

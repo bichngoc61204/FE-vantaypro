@@ -4,11 +4,24 @@ export const en = {
     teacher: 'Teacher',
     classes: 'Classes',
     subject: 'Subject',
+    students: 'Students',
     assignments: 'Assignments',
     timetable: 'Timetable',
+    attendance: 'Attendance',
     systemConfig: 'System Config',
     statistics: 'Statistics',
     auditLogs: 'Audit Logs',
+    
+    // Parent Sidebar
+    parentPortal: 'Parent Portal',
+    leaveRequests: 'Leave Requests',
+    studentProfile: 'Student Profile',
+    notifications: 'Notifications',
+    parent: 'Parent',
+
+    // Parent Dashboard
+    welcomeParent: 'Welcome Parents to NovaHA!',
+    parentIntro: 'Here you can track your child\'s timetable, attendance, leave requests and academic updates quickly and conveniently.',
     
     // Header
     adminDashboard: 'Admin Dashboard',

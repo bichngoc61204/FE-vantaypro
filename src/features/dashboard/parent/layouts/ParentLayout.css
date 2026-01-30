@@ -1,0 +1,26 @@
+.parent-layout {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background: var(--main-bg);
+    color: var(--tc);
+}
+
+.parent-layout-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    overflow: hidden;
+    background: var(--main-bg);
+}
+
+.parent-layout-content {
+    flex: 1;
+    padding: 24px;
+    background: var(--second-bg);
+    overflow-y: auto;
+    position: relative;
+    width: 100%;
+}

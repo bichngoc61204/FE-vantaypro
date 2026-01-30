@@ -1,0 +1,156 @@
+.parent-header {
+    height: 70px;
+    background-color: transparent; /* Admin uses transparent here usually if in main layout? No, Header has background. Let's check AdminHeader.css if needed, but usually var(--main-bg) */
+    background: var(--main-bg); /* Or transparent if main layout has background */
+    /* AdminHeader typically doesn't have border-bottom if it's "clean" style, but let's stick to simple first */
+    /* border-bottom: 1px solid var(--border); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.parent-header-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--tc);
+}
+
+.parent-header-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.parent-header-user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    border-radius: var(--radius);
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.parent-header-user:hover {
+    background-color: var(--mc-trans);
+}
+
+.parent-header-user-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--tc);
+}
+
+.parent-header-user-wrapper {
+    position: relative;
+    user-select: none;
+}
+
+.parent-header-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 8px;
+    width: 240px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: 0 10px 40px -10px rgba(0,0,0,0.1);
+    padding: 8px;
+    animation: fadeIn 0.2s ease;
+    z-index: 1000;
+}
+
+.parent-header-dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: var(--radius);
+    cursor: pointer;
+    color: var(--tc);
+    transition: all 0.2s ease;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.parent-header-dropdown-item:hover {
+    background-color: var(--mc-trans);
+    color: var(--mc);
+}
+
+.acc-user {
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.acc-name {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--tc);
+}
+
+.acc-mail {
+    font-size: 12px;
+    color: var(--ts);
+}
+
+.acc-section {
+    padding: 8px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: var(--tc);
+    font-weight: 600;
+}
+
+.lang-switcher, .switcher {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.switcher {
+    background: var(--main-bg);
+    border: 1px solid var(--border);
+    padding: 4px;
+    border-radius: 999px;
+}
+
+.switcher-item {
+    border: none;
+    background: transparent;
+    color: var(--ts);
+    padding: 4px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.switcher-item.active {
+    background: var(--mc);
+    color: var(--tw);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

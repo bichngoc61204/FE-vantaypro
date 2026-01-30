@@ -230,7 +230,11 @@ html.dark .select-menu::-webkit-scrollbar-thumb { background: rgba(255,255,255,0
 
 .filter.search {
   flex: 1;
-  min-width: 220px;
+  min-width: 320px !important;
+}
+
+.filter.search input {
+  width: 100%;
 }
 
 .filterLabel {
@@ -270,15 +274,29 @@ html.dark .select-menu::-webkit-scrollbar-thumb { background: rgba(255,255,255,0
 .btn--ghost {
   background: transparent;
   border-color: transparent;
+  color: var(--tc);
 }
 .btn--ghost:hover {
-  background: var(--mc-trans);
+  background: rgba(40, 203, 105, 0.12); /* Green tint */
+  color: var(--mc); /* Green text */
   border-color: transparent;
-  color: var(--mc);
 }
-html.dark .btn--ghost:hover {
-  background: rgba(255, 255, 255, 0.1);
+/* Alias for single-dash usage found in some files */
+.btn-ghost {
+  background: transparent;
+  border-color: transparent;
   color: var(--tc);
+}
+.btn-ghost:hover {
+  background: rgba(40, 203, 105, 0.12);
+  color: var(--mc);
+  border-color: transparent;
+}
+
+html.dark .btn--ghost:hover,
+html.dark .btn-ghost:hover {
+  background: rgba(40, 203, 105, 0.15);
+  color: var(--mc);
 }
 /* Checkbox Styles */
 .checkbox-wrap {
@@ -360,12 +378,15 @@ html.dark .btn--ghost:hover {
   justify-content:space-between;
 }
 .modalTitle{
-  font-weight:1000;
+  font-weight:800;
   font-size:14px;
   color: var(--tc);
+  text-align: left !important;
+  flex: 1 !important;
+  width: 100%;
 }
 .modalBody{
-  padding: 14px;
+  padding: 12px;
   color: var(--tc);
   flex: 1;
   overflow-y: auto;
@@ -379,7 +400,7 @@ html.dark .btn--ghost:hover {
 
 /* Confirm Specifics */
 .modal--confirm {
-  width: min(440px, 90%) !important;
+  width: min(380px, 90%) !important;
 }
 .confirmDesc{
   line-height:1.5;

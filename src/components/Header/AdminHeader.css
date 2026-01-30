@@ -1,0 +1,100 @@
+/* d:\LUAN\22110372\NovaHA\FE-1Touch\src\components\Header\AdminHeader.css */
+
+.admin-header {
+    height: 75px;
+    background-color: var(--main-bg);
+    border-bottom: 1px solid var(--border);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 260px; /* Width of sidebar */
+    z-index: 1030;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 25px;
+    transition: all 0.3s ease;
+}
+
+.admin-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.admin-header-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 15px;
+    border-radius: 100px;
+    background-color: var(--second-bg);
+    border: 1px solid var(--border);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.admin-header-user:hover {
+    border-color: var(--mc);
+}
+
+.admin-header-avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--mc);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.admin-header-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-header-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--tc);
+    line-height: 1.2;
+}
+
+.admin-header-role {
+    font-size: 11px;
+    color: var(--ts);
+}
+
+.admin-header-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--second-bg);
+    border: 1px solid var(--border);
+    color: var(--tc);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.admin-header-btn:hover {
+    border-color: var(--mc);
+    color: var(--mc);
+    transform: translateY(-2px);
+}
+
+.admin-header-btn svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.lang-switcher,
+.theme-toggle {
+   position: relative;
+}

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { FiX } from "react-icons/fi";
 import { MOCK_STUDENTS, MOCK_CLASSES } from "../../data/mockData";
 import Select from "../../../dashboard/admin/components/ui/Select";
+import Calendar from "../../../dashboard/admin/components/ui/Calendar/Calendar";
 
 export default function ModalStudentForm({ modal, onClose, onAudit, onMutate }) {
   const isAdd = modal.type === "addStudent";
@@ -69,8 +70,7 @@ export default function ModalStudentForm({ modal, onClose, onAudit, onMutate }) 
 
           <div style={{ flex: 1, minWidth: 220 }}>
             <div className="formRow" style={{ marginTop: 0 }}>
-              <label>Ngày sinh</label>
-              <input className="input" type="date" value={dob} onChange={(e) => setDob(e.target.value)} />
+              <Calendar label="Ngày sinh" value={dob} onChange={setDob} placeholder="Chọn ngày sinh" />
             </div>
           </div>
         </div>

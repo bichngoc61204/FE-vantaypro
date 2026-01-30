@@ -1,0 +1,31 @@
+.attendance-chart {
+    display: flex;
+    flex-direction: column;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px;
+    
+}
+
+.attendance-chart-header {
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--tc);
+}
+
+.attendance-chart-body {
+    height: 260px;
+}
+
+.attendance-chart-placeholder {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--ts);
+    border-radius: var(--radius);
+    background: var(--second-bg);
+    border: 1px dashed var(--border);
+    font-size: 14px;
+}

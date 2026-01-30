@@ -35,7 +35,7 @@ export default function Select({ value, onChange, options = [], placeholder = "C
   };
 
   return (
-    <div className={`selectWrap ${isOpen ? 'is-open' : ''} ${className}`} ref={containerRef} style={style}>
+    <div className={`selectWrap ${isOpen ? 'is-open' : ''} ${className}`} ref={containerRef} style={{ ...style, zIndex: isOpen ? 100 : 1 }}>
       {/* Trigger */}
       <div 
         className={`select ${isOpen ? 'is-open' : ''}`} 

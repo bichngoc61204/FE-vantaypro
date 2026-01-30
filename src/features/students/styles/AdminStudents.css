@@ -21,6 +21,22 @@
   min-width: 320px;
 }
 
+.stu-header {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.stu-header svg {
+  font-size: 20px;
+  color: var(--mc);
+}
+.stu-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--tc);
+  line-height: 1.2;
+}
+
 .stu-toolbar__right {
   display: flex;
   gap: 10px;
