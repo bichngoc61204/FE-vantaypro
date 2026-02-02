@@ -8,9 +8,6 @@ import {
   FaFingerprint
 } from 'react-icons/fa';
 
-import { useNavigate } from 'react-router-dom';
-
-
 /* ================= MOCK DATA ================= */
 
 const MOCK_STUDENT = {
@@ -82,13 +79,9 @@ const MOCK_TIMETABLE = [
   }
 ];
 
-
 /* ================= COMPONENT ================= */
 
-const ParentDashboard = () => {
-
-const navigate = useNavigate();
-
+const ParentDashboard = ({ onNavigate }) => {
   const presentCount = MOCK_ATTENDANCE.filter(a => a.status === ATTENDANCE_STATUS.PRESENT).length;
   const lateCount = MOCK_ATTENDANCE.filter(a => a.status === ATTENDANCE_STATUS.LATE).length;
   const absentCount = MOCK_ATTENDANCE.filter(a => a.status === ATTENDANCE_STATUS.ABSENT).length;
@@ -100,7 +93,7 @@ const navigate = useNavigate();
         <div className="attendance-today">
           <div className="attendance-header">
             <div className="icon-box emerald">
-              <FaFingerprint />
+              <FaFingerprint width={32} height={32} />
             </div>
             <div>
               <h4>Chuyên cần hôm nay</h4>
@@ -125,7 +118,7 @@ const navigate = useNavigate();
         </div>
 
         <div className="welcome-card">
-          <h3>Chào buổi sáng, Anh An!</h3>
+          <h2>Chào buổi sáng, Anh An!</h2>
           <p>
             Hôm nay {MOCK_STUDENT.full_name} có 5 tiết học.
             Đừng quên kiểm tra thông báo mới từ nhà trường.
@@ -184,7 +177,7 @@ const navigate = useNavigate();
         <div className="timetable">
           <div className="card-header">
             <h4>Lịch học tiếp theo</h4>
-            <button onClick={() => navigate('/parent/timetable')}>Xem tất cả</button>
+            <button className="btn" onClick={() => onNavigate?.('timetable')}>Xem tất cả</button>
           </div>
 
           <table>
@@ -231,7 +224,7 @@ const navigate = useNavigate();
             </div>
           ))}
 
-          <button className="view-more" onClick={() => navigate('/parent/attendance')}>
+          <button className="btn" onClick={() => onNavigate?.('attendance')}>
             Xem báo cáo chi tiết
           </button>
         </div>
