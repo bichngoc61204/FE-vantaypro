@@ -1,0 +1,158 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* TOP */
+.dashboard-top {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 24px;
+}
+
+.attendance-today,
+.welcome-card,
+.stat-card,
+.timetable,
+.attendance-recent {
+  background: #fff;
+  border-radius: 20px;
+  border: 1px solid #e5e7eb;
+  padding: 20px;
+}
+
+.attendance-header {
+  display: flex;
+  gap: 12px;
+}
+
+.icon-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-box.emerald {
+  background: #ecfdf5;
+  color: #059669;
+}
+
+.attendance-info {
+  margin-top: 16px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  background: #f8fafc;
+  padding: 10px;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+.status-live {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #10b981;
+}
+
+/* WELCOME */
+.welcome-card {
+  background: linear-gradient(135deg, #059669, #065f46);
+  color: white;
+}
+
+/* STATS */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.stat-card {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.stat-card .icon {
+  font-size: 24px;
+}
+
+.icon.green { color: #16a34a; }
+.icon.amber { color: #d97706; }
+.icon.rose { color: #e11d48; }
+.icon.emerald { color: #059669; }
+
+/* BOTTOM */
+.dashboard-bottom {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+}
+
+.timetable table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.timetable th,
+.timetable td {
+  padding: 12px;
+  font-size: 14px;
+}
+
+.timetable thead {
+  background: #f8fafc;
+}
+
+/* ATTENDANCE */
+.attendance-item {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.badge {
+  font-size: 10px;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+.badge.present {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.badge.late {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.badge.absent {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.view-more {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #f8fafc;
+  cursor: pointer;
+  font-weight: 600;
+}

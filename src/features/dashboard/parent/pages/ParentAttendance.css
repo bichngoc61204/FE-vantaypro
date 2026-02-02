@@ -1,0 +1,151 @@
+.attendance-wrapper {
+  padding: 24px;
+}
+
+.attendance-card {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.06);
+  overflow: hidden;
+}
+
+/* HEADER */
+.attendance-header {
+  padding: 24px;
+  border-bottom: 1px solid #f1f5f9;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.attendance-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.attendance-header p {
+  font-size: 13px;
+  color: #64748b;
+}
+
+/* FILTER */
+.attendance-filters {
+  display: flex;
+  gap: 16px;
+}
+
+.filter-group label {
+  font-size: 10px;
+  font-weight: 700;
+  color: #94a3b8;
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper select {
+  padding: 6px 28px 6px 12px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  background: #fff;
+}
+
+.select-wrapper svg {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #64748b;
+}
+
+.status-filter {
+  display: flex;
+  background: #f1f5f9;
+  padding: 4px;
+  border-radius: 12px;
+}
+
+.status-filter button {
+  padding: 6px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 8px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.status-filter button.active {
+  background: #fff;
+  color: #10b981;
+}
+
+/* DATE */
+.attendance-day {
+  border-top: 1px solid #f1f5f9;
+}
+
+.date-row {
+  padding: 12px 24px;
+  background: #f8fafc;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #334155;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 14px 24px;
+  font-size: 13px;
+  text-align: left;
+}
+
+th {
+  color: #94a3b8;
+  font-weight: 700;
+}
+
+/* STATUS */
+.status {
+  padding: 4px 10px;
+  font-size: 10px;
+  font-weight: 700;
+  border-radius: 8px;
+}
+
+.status.present {
+  background: #ecfdf5;
+  color: #059669;
+}
+
+.status.late {
+  background: #fff7ed;
+  color: #ea580c;
+}
+
+.status.excused {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.status.absent {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+/* EMPTY */
+.empty-state {
+  padding: 80px;
+  text-align: center;
+  color: #94a3b8;
+}

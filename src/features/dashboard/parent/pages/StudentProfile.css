@@ -1,0 +1,167 @@
+.student-profile {
+  padding: 24px;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 24px;
+}
+
+/* LEFT */
+.profile-card {
+  background: #fff;
+  border-radius: 24px;
+  padding: 32px;
+  text-align: center;
+  border: 1px solid #e2e8f0;
+}
+
+.profile-avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 24px;
+  object-fit: cover;
+  margin-bottom: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+.profile-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.student-code {
+  display: inline-block;
+  margin: 8px 0 24px;
+  padding: 6px 14px;
+  background: #ecfdf5;
+  color: #10b981;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.profile-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.meta-item {
+  display: flex;
+  gap: 12px;
+  background: #f8fafc;
+  padding: 12px;
+  border-radius: 16px;
+  border: 1px solid #f1f5f9;
+  align-items: center;
+}
+
+.meta-item svg {
+  color: #10b981;
+}
+
+.meta-item span {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #94a3b8;
+  font-weight: 700;
+}
+
+.meta-item strong {
+  font-size: 14px;
+}
+
+/* RIGHT */
+.detail-card {
+  background: #fff;
+  border-radius: 24px;
+  border: 1px solid #e2e8f0;
+  padding: 32px;
+  margin-bottom: 24px;
+}
+
+.detail-card h4 {
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.detail-item label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #94a3b8;
+}
+
+.detail-item p {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+.detail-item .highlight {
+  color: #10b981;
+  font-style: italic;
+}
+
+/* ACHIEVEMENTS */
+.achievement-card {
+  background: #064e3b;
+  color: white;
+  padding: 32px;
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.achievement-card h4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.achievement-card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.achievement-card li {
+  display: flex;
+  gap: 16px;
+}
+
+.achievement-card li span {
+  width: 32px;
+  height: 32px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.achievement-card p {
+  font-size: 12px;
+  color: #a7f3d0;
+}
+
+.achievement-bg {
+  position: absolute;
+  right: -20px;
+  top: -20px;
+  font-size: 180px;
+  opacity: 0.08;
+}
